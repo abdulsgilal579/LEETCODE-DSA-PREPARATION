@@ -9,16 +9,16 @@ def evaluateRPN(tokens):
         elif token == "-":
             a = stack.pop()
             b = stack.pop()
-            stack.append(b-a)
+            stack.append(b - a)
         elif token == "/":
             a = stack.pop()
             b = stack.pop()
-            stack.append(int(b/a))
+            stack.append(int(b / a))
         elif token == "*":
             stack.append(stack.pop() * stack.pop())
         else:
             stack.append(int(token))
     return stack[0]
-    
+
 
 print(evaluateRPN(tokens=tokens))
