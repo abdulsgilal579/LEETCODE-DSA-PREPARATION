@@ -1,4 +1,5 @@
-prices = [7,1,5,3,6,4]
+prices = [7, 1, 5, 3, 6, 4]
+
 
 def maxProfit(prices):
     left = 0
@@ -13,5 +14,6 @@ def maxProfit(prices):
             maxProfitDay = max(maxProfitDay, profit)
         right += 1
     return maxProfitDay
+
 
 print(maxProfit(prices=prices))

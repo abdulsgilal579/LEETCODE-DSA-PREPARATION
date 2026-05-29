@@ -3,6 +3,7 @@
 s1 = "ab"
 s2 = "eidbaooo"
 
+
 def permutationInString(string1, string2):
     if len(string1) > len(string2):
         return False
@@ -15,7 +16,7 @@ def permutationInString(string1, string2):
             s1HashMap[character] = s1HashMap.get(character, 0) + 1
         else:
             s1HashMap[character] += 1
-        
+
     for right in range(len(string2)):
         windowHashMap[string2[right]] = windowHashMap.get(string2[right], 0) + 1
         windowSize = right - left + 1
@@ -29,8 +30,3 @@ def permutationInString(string1, string2):
         if windowHashMap == s1HashMap:
             return True
     return False
-
-
-
-    
-    

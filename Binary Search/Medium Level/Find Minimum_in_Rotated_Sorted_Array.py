@@ -1,4 +1,4 @@
-rotatedArray = [3,4,5,1,2]
+rotatedArray = [3, 4, 5, 1, 2]
 
 
 def minimumInRotatedArray(array):
@@ -17,6 +17,3 @@ def minimumInRotatedArray(array):
     # [5, 1]
     # Here the right element is the minimum, not the left!
     # So you can't just assume left is always smaller when 2 elements remain. That's exactly why the binary search logic handles it properly — it doesn't assume, it checks nums[mid] > nums[-1] to decide which side to go.
-
-        
-

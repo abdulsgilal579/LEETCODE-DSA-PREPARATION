@@ -14,5 +14,6 @@ def longestSubString(string):
         stringSet.add(string[right])
         maximumString = max(maximumString, right - left + 1)
     return maximumString
-        
+
+
 print(longestSubString(string=s))

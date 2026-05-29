@@ -30,4 +30,5 @@ def largestRectHist(heights):
         maxArea = max(maxArea, area)
     return maxArea
 
+
 print(largestRectHist(heights=heights))

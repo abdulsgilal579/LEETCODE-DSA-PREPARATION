@@ -1,6 +1,7 @@
-#I Learned This Today
+# I Learned This Today
 
 array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
 
 def middleElement(array):
     slow = 0
@@ -12,4 +13,5 @@ def middleElement(array):
 
     return array[slow]
 
-print(middleElement(array=array))  
+
+print(middleElement(array=array))

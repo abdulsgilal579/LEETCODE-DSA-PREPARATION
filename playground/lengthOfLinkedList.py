@@ -3,6 +3,7 @@ class ListNode:
         self.val = val
         self.next = next
 
+
 head = ListNode(1)
 head.next = ListNode(2)
 head.next.next = ListNode(2)
