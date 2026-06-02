@@ -3,10 +3,10 @@ class MyQueue:
     def __init__(self):
         self.stack = []
         self.stack2 = []
-        
+
     def push(self, x: int) -> None:
         self.stack.append(x)
-    
+
     def pop(self) -> int:
         if not self.stack2:
             while self.stack:
@@ -25,4 +25,3 @@ class MyQueue:
         if not self.stack and not self.stack2:
             return True
         return False
-        
