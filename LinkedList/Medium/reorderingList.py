@@ -45,3 +45,54 @@ while second:
     second = temp2
 
 print(head)
+
+
+
+##LeetCode Submission
+
+# Definition for singly-linked list.
+# class ListNode:
+#     def __init__(self, val=0, next=None):
+#         self.val = val
+#         self.next = next
+# class Solution:
+#     def reorderList(self, head: Optional[ListNode]) -> None:
+#         """
+#         Do not return anything, modify head in-place instead.
+#         """
+#         slow = head
+#         fast = head
+#
+#         while fast and fast.next is not None:
+#             slow = slow.next
+#             fast = fast.next.next
+#
+#         secondHalf = slow.next
+#         slow.next = None
+#         firstHalf = head
+#
+#         previous = None
+#         currentNode = secondHalf
+#
+#         while currentNode:
+#             nextNode = currentNode.next
+#             currentNode.next = previous
+#             previous = currentNode
+#             currentNode = nextNode
+#
+#         secondHalf = previous
+#
+#         while secondHalf:
+#             temp1 = firstHalf.next
+#             temp2 = secondHalf.next
+#
+#             firstHalf.next = secondHalf
+#             secondHalf.next = temp1
+#
+#             firstHalf = temp1
+#             secondHalf = temp2
+#
+#
+#
+#
+#
