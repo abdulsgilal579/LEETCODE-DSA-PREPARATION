@@ -1,4 +1,5 @@
-array = [3,7,2,9,1]
+array = [3, 7, 2, 9, 1]
+
 
 def sumOfArrayElements(array):
     def summation(index):
@@ -8,9 +9,10 @@ def sumOfArrayElements(array):
 
     return summation(len(array) - 1)
 
+
 print(sumOfArrayElements(array=array))
 
-#Stack
+# Stack
 # summation(4)
 # = 1 + summation(3)
 #

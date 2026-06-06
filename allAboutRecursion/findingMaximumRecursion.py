@@ -1,17 +1,19 @@
 array = [8, 3, 12, 5, 9999.4, 9999.5]
 
+
 def maximumRecursion(array):
     def maximum(index):
         if index == 0:
             return array[0]
-        return max(array[index], maximum(index-1))
+        return max(array[index], maximum(index - 1))
 
     return maximum(len(array) - 1)
+
 
 print(maximumRecursion(array=array))
 
 
-#Stack Call
+# Stack Call
 # maximum(5)
 # = max(7, maximum(4))
 #

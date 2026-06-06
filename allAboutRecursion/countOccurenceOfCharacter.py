@@ -1,6 +1,6 @@
-
 string = "bananaaaaaa"
 character = "a"
+
 
 def countOccurence(string, character):
     def counting(index):
@@ -13,5 +13,6 @@ def countOccurence(string, character):
         return 0 + counting(index - 1)
 
     return counting(len(string) - 1)
+
 
 print(countOccurence(string=string, character=character))
