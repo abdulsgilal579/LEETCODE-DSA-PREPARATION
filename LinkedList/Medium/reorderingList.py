@@ -28,6 +28,7 @@ def reverseLinkedList(head):
 
     return prev
 
+
 secondHalf = reverseLinkedList(secondHalf)
 
 # Merge two halves
@@ -45,7 +46,6 @@ while second:
     second = temp2
 
 print(head)
-
 
 
 ##LeetCode Submission
