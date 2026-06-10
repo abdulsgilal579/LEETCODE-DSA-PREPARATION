@@ -1,5 +1,3 @@
-from http.cookiejar import cut_port_re
-
 from LinkedList.linkedListImplementation import LinkedList
 
 head = LinkedList.create([1, 2, 7, 4, 3, 9, 8, 5])
